@@ -44,12 +44,15 @@ if select == "Home":
 elif select == "STRAVA Competition Rules":
     st.image(image= 'Strava rules_logo.png', use_column_width=True)
     st.subheader("The rules have been decreed as follows:")
-    st.write(""" Competition Timeframe: May 1st 0000 - July 10th 2359""")
-    st.write("""Exercises can be any kind but the intent must be to workout/train. AKA: Leisurely dog walk with the Mrs or bike ride with the kids wouldn't count. Any exercise can be vetoed by the group with a simple majority rules. 
-    So keep your underwater basketweaving off Strava.""")
-    st.write("""Scoring will be based on STRAVA defined heart rate zones. CAUTION: If using another heart rate monitor
+    st.write(""" Competition Timeframe: **May 1st (0000) - July 10th (2359)**""")
+    st.write("""Exercises can be any kind but the intent must be to **workout/train**. For example: 
+    Leisurely dog walk with the Mrs or bike ride with the kids wouldn't count. Any exercise can be 
+    vetoed by the group with a simple majority rules. So keep your underwater basketweaving off Strava.""")
+    st.write("""Scoring will be based on STRAVA defined heart rate zones. **CAUTION:** If using another heart rate monitor
     make sure the hr zones resemble the STRAVA defined hr zones. If there are issues with seeing the zones 
-    it is most likely a watch setting that needs to be enabled.""")
+    it is most likely a watch setting that needs to be enabled. Additionally if you capture your hr zones 
+    using another tool or app other than STRAVA, the group has decided to average the hr and use that
+    zone's multiplier.""")
     st.image(image= 'rules_example.png')
 
 elif select == "FAQs":
@@ -103,21 +106,33 @@ elif select == "Weekly & Overall Leaderboard":
     fig = px.bar(
         data_frame = week_df,
         x = "Athletes",
-        y = "Week 2 -- May 9 - 15",
-        title = "<b>Week 2 Leaderboard Barchart</b>"
+        y = "Week 2 -- May 9 - 15"
     )
+    fig.update_layout(
+    title={
+        'text': "<b> Week 2 Leaderboard </b>",
+        'y':0.9,
+        'x':0.5,
+        'xanchor': 'center',
+        'yanchor': 'top'})
     st.plotly_chart(fig)
 
     # Overall Leaderboard
-    st.subheader('Overall Leaderboard')
+    st.subheader('Overall Points')
     overall_df = pd.read_excel('Master_comp1.xlsx')
     overall_df
     fig = px.bar(
         data_frame = overall_df,
         x = "Athletes",
-        y = "Total Points",
-        title = "<b>Overall Leaderboard Barchart</b>"
+        y = "Total Points"
     )
+    fig.update_layout(
+    title={
+        'text': "<b> Overall Leaderboard </b>",
+        'y':0.9,
+        'x':0.5,
+        'xanchor': 'center',
+        'yanchor': 'top'})
     st.plotly_chart(fig)
 
 elif select == "Pictures":
