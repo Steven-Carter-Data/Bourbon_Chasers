@@ -37,6 +37,7 @@ if select == "Home":
         * View the rules of the competition & FAQs.
         * After your work-out, enter your times for a quick check at how many points you earned.
         * View the Weekly & Overall Leaderboard.
+        * Check out Bourbon Chasers pictures from previous events!
         * Not feeling motivated? Click on the 'Inspiration' tab to feel the wash of motivation!
     """)
 
