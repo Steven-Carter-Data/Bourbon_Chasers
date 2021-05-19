@@ -69,7 +69,7 @@ elif select == "FAQs":
     st.subheader('4. What is the difference between Spartan Warriors & Bourbon Chasers?')
     st.write('#### A. Nothing')
     st.subheader('5. What do I do if I do not want to workout?')
-    st.write('#### Schedule naval piercing.')
+    st.write('#### A. Schedule naval piercing.')
     st.subheader('6. What will I look like with a belly button piercing?')
     st.image(image= 'piercing.jpg', use_column_width=False)
 
