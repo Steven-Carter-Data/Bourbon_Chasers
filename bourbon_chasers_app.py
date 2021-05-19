@@ -71,6 +71,7 @@ elif select == "FAQs":
     st.subheader('5. What should I do if I do not want to workout?')
     st.write('#### A. Schedule naval piercing.')
     st.subheader('6. What will I look like with a belly button piercing?')
+    st.write('#### A. ') 
     st.image(image= 'piercing.jpg', use_column_width=False)
 
 elif select == "Zone Times to Points Conversion":
