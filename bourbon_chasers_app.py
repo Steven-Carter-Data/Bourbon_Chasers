@@ -141,7 +141,7 @@ elif select == "Pictures":
 elif select == "Inspiration":
     st.image(image= 'inspiration_logo.png', use_column_width=False)
     st.write('#### Your future if you win.....')
-    st.image(image= '2.jpg', use_column_width=False)
+    st.image(image= '2.jpg', use_column_width=True)
     st.write("""""")
     st.write("""""")
     
