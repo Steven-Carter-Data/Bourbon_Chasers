@@ -68,10 +68,13 @@ elif select == "FAQs":
     st.text("")
     st.subheader('4. What is the difference between Spartan Warriors & Bourbon Chasers?')
     st.write('#### A. Nothing')
+    st.text("")
     st.subheader('5. What should I do if I do not want to workout?')
     st.write('#### A. Schedule naval piercing.')
+    st.text("")
     st.subheader('6. What will I look like with a belly button piercing?')
-    st.write('#### A. ') 
+    st.write('#### A. ')
+    st.text("")
     st.image(image= 'piercing.jpg', use_column_width=False)
 
 elif select == "Zone Times to Points Conversion":
