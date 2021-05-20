@@ -145,8 +145,9 @@ elif select == "Weekly & Overall Leaderboard":
 
 elif select == "Pictures":
     st.image(image= 'pictures_logo.png', use_column_width=False)
-    st.image(image= 'tri_pic.png', use_column_width=False)
-    st.image(image= 'tri1.png', use_column_width=False)
+    col1, col2 = st.beta_columns(2)
+    col1.image(image= 'tri_pic.png', use_column_width=False)
+    col2.imageimage(image= 'tri1.png', use_column_width=False)
 
 elif select == "Inspiration":
     st.image(image= 'inspiration_logo.png', use_column_width=False)
