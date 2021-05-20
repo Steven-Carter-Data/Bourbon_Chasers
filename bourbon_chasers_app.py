@@ -148,7 +148,8 @@ elif select == "Pictures":
     col1, col2 = st.beta_columns(2)
     col1.image(image= 'tri_pic.png', use_column_width=True)
     col2.image(image= 'tri1.png', use_column_width=True)
-    col2.image(image= 'tri2.png', use_column_width=False)
+    col2.image(image= 'tri2.png', use_column_width=True)
+    st.subheader('More pics on the way!!')
 
 elif select == "Inspiration":
     st.image(image= 'inspiration_logo.png', use_column_width=False)
