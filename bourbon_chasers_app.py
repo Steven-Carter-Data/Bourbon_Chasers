@@ -27,9 +27,12 @@ st.set_page_config(
 
 st.sidebar.title("Bourbon Chasers Hub")
 select = st.sidebar.selectbox('Navigate the options below:', ["Home", "STRAVA Competition Rules","FAQs","Zone Times to Points Conversion", "Weekly & Overall Leaderboard", "Pictures", "Inspiration"])
+
 if select == "Home":
     st.image(image= 'bc_home logo.png', use_column_width=True)
-    st.image(image= 'bc2.png', use_column_width=False)
+    col1, col2, col3 = st.beta_columns(3)
+    col1.image(image= 'bc2.png', use_column_width=True)
+    
     st.write("""## Welcome all Bourbon Chasers!""")
     st.write("""How the Bourbon Chasers Application Works: """)
     st.info("""
