@@ -154,9 +154,9 @@ elif select == "Pictures":
     col2.image(image= 'af1.jpg', use_column_width=True)
     col1.write('#### Look at that Mile 26 form! What a boss Todd!!')
     col1.video('toddrun.mp4', start_time=0)
-    col2.image(image= 'af2.jpg', use_column_width=False)
+    col2.image(image= 'af2.jpg', use_column_width=True)
     col1.image(image= 'af3.jpg', use_column_width=True)
-    col2.image(image= 'af4.jpg', use_column_width=False)
+    col2.image(image= 'af4.jpg', use_column_width=True)
     st.subheader('More pics on the way!!')
 
 elif select == "Inspiration":
