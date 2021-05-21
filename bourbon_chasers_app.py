@@ -152,7 +152,7 @@ elif select == "Pictures":
     col1.image(image= 'tri3.png', use_column_width=True)
     col1.image(image= 'af_logo.png', use_column_width=True)
     col2.image(image= 'af1.jpg', use_column_width=True)
-    col1.video(video= 'toddrun.mp4', start_time=0)
+    col1.video('toddrun.mp4', start_time=0)
     st.subheader('More pics on the way!!')
 
 elif select == "Inspiration":
