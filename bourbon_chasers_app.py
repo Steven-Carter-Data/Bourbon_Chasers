@@ -150,6 +150,7 @@ elif select == "Pictures":
     col2.image(image= 'tri1.png', use_column_width=True)
     col2.image(image= 'tri2.png', use_column_width=True)
     col1.image(image= 'tri3.png', use_column_width=True)
+    col1.image(image= 'af_logo.png', use_column_width=True)
     st.subheader('More pics on the way!!')
 
 elif select == "Inspiration":
