@@ -35,7 +35,7 @@ if select == "Home":
     
     col2.write("""## Welcome all Bourbon Chasers!""")
     col2.write("""How the Bourbon Chasers Application Works: """)
-    st.info("""
+    col2.info("""
         * Use the drop-down menu on the left side to navigate throughout the app.
         * View the rules of the competition & FAQs.
         * After your work-out, enter your times for a quick check at how many points you earned.
