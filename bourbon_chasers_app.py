@@ -30,7 +30,7 @@ select = st.sidebar.selectbox('Navigate the options below:', ["Home", "STRAVA Co
 
 if select == "Home":
     st.image(image= 'bc_home logo.png', use_column_width=True)
-    col1, col2, col3 = st.beta_columns(3)
+    col1, col2 = st.beta_columns(2)
     col1.image(image= 'bc2.png', use_column_width=True)
     
     col2.write("""## Welcome all Bourbon Chasers!""")
