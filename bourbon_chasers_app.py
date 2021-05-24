@@ -33,8 +33,8 @@ if select == "Home":
     col1, col2, col3 = st.beta_columns(3)
     col1.image(image= 'bc2.png', use_column_width=True)
     
-    st.write("""## Welcome all Bourbon Chasers!""")
-    st.write("""How the Bourbon Chasers Application Works: """)
+    col2.write("""## Welcome all Bourbon Chasers!""")
+    col2.write("""How the Bourbon Chasers Application Works: """)
     st.info("""
         * Use the drop-down menu on the left side to navigate throughout the app.
         * View the rules of the competition & FAQs.
