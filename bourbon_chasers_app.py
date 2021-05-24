@@ -96,18 +96,21 @@ elif select == "Zone Times to Points Conversion":
     st.write("""""")
     st.write("""""")
     z3number = st.number_input('Enter HR Zone 3 Time (x 1.5 multiplier):')
-    st.write('### Your Zone 3 Points are: ', z3number*1.5)
+    z3_total = z3number*1.5
+    st.write('### Your Zone 3 Points are: ', z3_total)
     st.write("""""")
     st.write("""""")
     z4number = st.number_input('Enter HR Zone 4 Time (x 2 multiplier):')
-    st.write('### Your Zone 4 Points are: ', z4number*2)
+    z4_total = z4number*2
+    st.write('### Your Zone 4 Points are: ', z4_total)
     st.write("""""")
     st.write("""""")
     z5number = st.number_input('Enter HR Zone 5 Time (x 3 multiplier):')
-    st.write('### Your Zone 5 Points are: ', z5number*3)
+    z5_total = z5number*3
+    st.write('### Your Zone 5 Points are: ', z5_total)
     st.write("""""")
     st.write("""""")
-    st.write('## Your **Total Points** for this activity are : ', z1_total+z2_total)
+    st.write('## Your **Total Points** for this activity are : ', z1_total+z2_total+z3_total+z4_total+z5_total)
     
 elif select == "Weekly & Overall Leaderboard":
     st.image(image= 'scoreboard_logo.png', use_column_width=True)
