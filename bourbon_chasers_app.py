@@ -122,11 +122,11 @@ elif select == "Weekly & Overall Leaderboard":
     fig = px.bar(
         data_frame = week_df,
         x = "Athletes",
-        y = "Week 3 -- May 16 - 22"
+        y = "Week 4 -- May 23 - 29"
     )
     fig.update_layout(
     title={
-        'text': "<b> Week 3 Leaderboard </b>",
+        'text': "<b> Week 4 Leaderboard </b>",
         'y':0.9,
         'x':0.5,
         'xanchor': 'center',
