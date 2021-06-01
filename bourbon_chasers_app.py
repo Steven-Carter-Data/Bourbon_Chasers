@@ -1,6 +1,7 @@
 ### Strava Competition -- Streamlit ### 
 ### Author: Steven Carter
 
+from typing import Container
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -151,16 +152,20 @@ elif select == "Weekly & Overall Leaderboard":
         'yanchor': 'top'})
     st.plotly_chart(fig)
 
-    st.sidebar.multiselect('Select the Bourbon Chaser:', ["Jeremiah", "Senay", "Phil", "Todd",
-     "Steven", "Josh", "Andrew", "Brando", "Manley", "Matt"])
+    # Using streamlit containers
+    container = st.beta_container()
+    all = st.checkbox("Select ALL Bourbon Chasers")
 
-    # nested function to display athlete data
-    if select == "Jeremiah":
-        st.write("This is just a test")
-    elif select == "Senay":
-        st.write("This is working!")
-     
+    if all:
+        selected_options = container.multiselect("Select the Athlete:",
+        ["Jeremiah", "Senay", "Phil", "Todd",
+        "Steven", "Josh", "Andrew", "Brando", "Manley", "Matt"])
+    else:
+        selected_options = container.multiselect("Select one or more Bourbon Chaser:",
+        ["Jeremiah", "Senay", "Phil", "Todd",
+        "Steven", "Josh", "Andrew", "Brando", "Manley", "Matt"])
 
+        
 elif select == "Pictures":
     st.image(image= 'pictures_logo.png', use_column_width=False)
     col1, col2 = st.beta_columns(2)
