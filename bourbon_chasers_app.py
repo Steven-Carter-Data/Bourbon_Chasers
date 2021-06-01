@@ -161,7 +161,7 @@ elif select == "Weekly & Overall Leaderboard":
         ["Jeremiah", "Senay", "Phil", "Todd",
         "Steven", "Josh", "Andrew", "Brando", "Manley", "Matt"])
     else:
-        selected_options = container.multiselect("Select one or more Bourbon Chaser:",
+        selected_options = container.multiselect("Select one or more Bourbon Chasers:",
         ["Jeremiah", "Senay", "Phil", "Todd",
         "Steven", "Josh", "Andrew", "Brando", "Manley", "Matt"])
 
