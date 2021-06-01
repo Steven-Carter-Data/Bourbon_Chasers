@@ -154,10 +154,9 @@ elif select == "Weekly & Overall Leaderboard":
     st.subheader("Check YOUR Weekly Stats & Compare With Other Bourbon Chasers!")
     st.sidebar.multiselect('Select the Bourbon Chaser:', ["Jeremiah", "Senay", "Phil", "Todd",
      "Steven", "Josh", "Andrew", "Brando", "Manley", "Matt"])
-
-        # nested function to display athlete data
-        if select == "Jeremiah":
-            print("This is just a test")
+    # nested function to display athlete data
+    if select == "Jeremiah":
+        print("This is just a test")
      
 
 elif select == "Pictures":
