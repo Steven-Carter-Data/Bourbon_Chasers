@@ -151,12 +151,14 @@ elif select == "Weekly & Overall Leaderboard":
         'yanchor': 'top'})
     st.plotly_chart(fig)
 
-    st.subheader("Check YOUR Weekly Stats & Compare With Other Bourbon Chasers!")
     st.sidebar.multiselect('Select the Bourbon Chaser:', ["Jeremiah", "Senay", "Phil", "Todd",
      "Steven", "Josh", "Andrew", "Brando", "Manley", "Matt"])
+
     # nested function to display athlete data
     if select == "Jeremiah":
-        print("This is just a test")
+        st.write("This is just a test")
+    elif select == "Senay":
+        st.write("This is working!")
      
 
 elif select == "Pictures":
