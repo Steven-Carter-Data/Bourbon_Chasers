@@ -155,6 +155,11 @@ elif select == "Weekly & Overall Leaderboard":
     st.sidebar.multiselect('Select the Bourbon Chaser:', ["Jeremiah", "Senay", "Phil", "Todd",
      "Steven", "Josh", "Andrew", "Brando", "Manley", "Matt"])
 
+        # nested function to display athlete data
+        if select == "Jeremiah":
+            print("This is just a test")
+     
+
 elif select == "Pictures":
     st.image(image= 'pictures_logo.png', use_column_width=False)
     col1, col2 = st.beta_columns(2)
