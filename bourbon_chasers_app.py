@@ -151,6 +151,10 @@ elif select == "Weekly & Overall Leaderboard":
         'yanchor': 'top'})
     st.plotly_chart(fig)
 
+    st.subheader("Check YOUR Weekly Stats & Compare With Other Bourbon Chasers!")
+    st.sidebar.multiselect('Select the Bourbon Chaser:', ["Jeremiah", "Senay", "Phil", "Todd",
+     "Steven", "Josh", "Andrew", "Brando", "Manley", "Matt"])
+
 elif select == "Pictures":
     st.image(image= 'pictures_logo.png', use_column_width=False)
     col1, col2 = st.beta_columns(2)
