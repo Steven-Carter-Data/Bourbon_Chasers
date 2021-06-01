@@ -154,10 +154,10 @@ elif select == "Weekly & Overall Leaderboard":
 
     # Using streamlit containers
     container = st.beta_container()
-    all = st.checkbox("Select ALL Bourbon Chasers")
+    all = st.checkbox("Select ALL Bourbon Chasers for Comparison")
 
     if all:
-        selected_options = container.multiselect("Select the Athlete:",
+        selected_options = container.multiselect("Select the Bourbon Chaser:",
         ["Jeremiah", "Senay", "Phil", "Todd",
         "Steven", "Josh", "Andrew", "Brando", "Manley", "Matt"])
     else:
