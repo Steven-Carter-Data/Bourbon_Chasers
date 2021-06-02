@@ -163,7 +163,8 @@ elif select == "Weekly & Overall Leaderboard":
         data_frame = week_df,
         y = week_df.mean(),
         labels = {
-            "y" : "Weekly Average"
+            "y" : "Weekly Average",
+            "index" : "Weeks 1 - 10"
         },
         title = "Bourbon Chaser Points -- Weekly Average"
     )
