@@ -165,6 +165,8 @@ elif select == "Weekly & Overall Leaderboard":
 
     mask_athletes = week_df['Athletes'].isin(athletes_selected)
     week_df1 = week_df[mask_athletes]
+    week_df1
+
 
     # if all:
     #     selected_options = container.multiselect("Select the Bourbon Chaser:",
