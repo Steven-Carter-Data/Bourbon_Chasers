@@ -161,6 +161,11 @@ elif select == "Weekly & Overall Leaderboard":
     athletes = week_df['Athletes'].unique()
     athletes_selected = st.multiselect('Select the Bourbon Chaser:', athletes)
 
+    # Mask to filter dataframe
+
+    mask_athletes = week_df['Athletes'].isin(athletes_selected)
+    week_df1 = week_df[mask_athletes]
+
     # if all:
     #     selected_options = container.multiselect("Select the Bourbon Chaser:",
     #     ["Jeremiah", "Senay", "Phil", "Todd",
