@@ -20,6 +20,8 @@ import sweetviz as sv
 import openpyxl
 import sys
 from streamlit import cli as stcli
+import statistics
+from statistics import mean
 
 st.set_page_config(
      page_title='Bourbon Chasers: STRAVA Competition',
@@ -151,6 +153,10 @@ elif select == "Weekly & Overall Leaderboard":
         'xanchor': 'center',
         'yanchor': 'top'})
     st.plotly_chart(fig)
+
+    st.subheader('More Stats:')
+    st.write('#### Weekly Points Average')
+    week_df.mean()
 
     # Compare each athlete
     # Create a list of possible values and multiselect menu with them in it
