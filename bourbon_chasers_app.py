@@ -152,10 +152,7 @@ elif select == "Weekly & Overall Leaderboard":
         'yanchor': 'top'})
     st.plotly_chart(fig)
 
-    # Using streamlit containers
-    container = st.beta_container()
-    all = st.checkbox("Select ALL Bourbon Chasers for Comparison")
-
+    # Compare each athlete
     # Create a list of possible values and multiselect menu with them in it
 
     athletes = week_df['Athletes'].unique()
