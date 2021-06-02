@@ -156,14 +156,19 @@ elif select == "Weekly & Overall Leaderboard":
     container = st.beta_container()
     all = st.checkbox("Select ALL Bourbon Chasers for Comparison")
 
-    if all:
-        selected_options = container.multiselect("Select the Bourbon Chaser:",
-        ["Jeremiah", "Senay", "Phil", "Todd",
-        "Steven", "Josh", "Andrew", "Brando", "Manley", "Matt"])
-    else:
-        selected_options = container.multiselect("Select one or more Bourbon Chasers:",
-        ["Jeremiah", "Senay", "Phil", "Todd",
-        "Steven", "Josh", "Andrew", "Brando", "Manley", "Matt"])
+    # Create a list of possible values and multiselect menu with them in it
+
+    athletes = week_df['Athletes'].unique()
+    athletes_selected = st.multiselect('Select the Bourbon Chaser:', athletes)
+
+    # if all:
+    #     selected_options = container.multiselect("Select the Bourbon Chaser:",
+    #     ["Jeremiah", "Senay", "Phil", "Todd",
+    #     "Steven", "Josh", "Andrew", "Brando", "Manley", "Matt"])
+    # else:
+    #     selected_options = container.multiselect("Select one or more Bourbon Chasers:",
+    #     ["Jeremiah", "Senay", "Phil", "Todd",
+    #     "Steven", "Josh", "Andrew", "Brando", "Manley", "Matt"])
 
         
 elif select == "Pictures":
