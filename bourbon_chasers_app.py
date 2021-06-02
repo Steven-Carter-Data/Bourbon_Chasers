@@ -136,8 +136,10 @@ elif select == "Weekly & Overall Leaderboard":
         'yanchor': 'top'})
     st.plotly_chart(fig)
 
+    col1, col2 = st.beta_columns(2)
+
     # Overall Leaderboard
-    st.subheader('Overall Points')
+    col2.subheader('Overall Points')
     overall_df = pd.read_excel('Master_comp1.xlsx')
     overall_df
     fig = px.bar(
@@ -152,7 +154,7 @@ elif select == "Weekly & Overall Leaderboard":
         'x':0.5,
         'xanchor': 'center',
         'yanchor': 'top'})
-    st.plotly_chart(fig)
+    col2.plotly_chart(fig)
 
     col1, col2 = st.beta_columns(2)
     col1.subheader('More Stats:')
