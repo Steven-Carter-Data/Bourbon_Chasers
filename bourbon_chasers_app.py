@@ -154,9 +154,10 @@ elif select == "Weekly & Overall Leaderboard":
         'yanchor': 'top'})
     st.plotly_chart(fig)
 
-    st.subheader('More Stats:')
-    st.write('#### Weekly Points Average')
-    st.write(week_df.mean())
+    col1, col2 = st.beta_columns(2)
+    col1.subheader('More Stats:')
+    col1.write('#### Weekly Points Average Among the Bourbon Chasers')
+    col1.write(week_df.mean())
 
     # Compare each athlete
     # Create a list of possible values and multiselect menu with them in it
