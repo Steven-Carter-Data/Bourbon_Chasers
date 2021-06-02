@@ -159,7 +159,11 @@ elif select == "Weekly & Overall Leaderboard":
     col1.write('#### Weekly Points Average Among the Bourbon Chasers')
     col1.write(week_df.mean())
 
-    col2.plotly_chart(week_df.mean())
+    fig = px.scatter(
+        data_frame = week_df,
+        y = week_df.mean()
+    )
+    col2.plotly_chart(fig)
 
     # Compare each athlete
     # Create a list of possible values and multiselect menu with them in it
