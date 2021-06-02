@@ -159,9 +159,10 @@ elif select == "Weekly & Overall Leaderboard":
     col1.write('#### Weekly Points Average Among the Bourbon Chasers')
     col1.write(week_df.mean())
 
+    week_df_indexmod = week_df.set_index([pd.Index([1,2,3,4,5,6,7,8,9,10])])
     fig = px.scatter(
-        data_frame = week_df,
-        y = week_df.mean(),
+        data_frame = week_df_indexmod,
+        y = week_df_indexmod.mean(),
         labels = {
             "y" : "Weekly Points Average",
             "index" : "Weeks 1 - 10"
