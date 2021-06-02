@@ -163,10 +163,10 @@ elif select == "Weekly & Overall Leaderboard":
         data_frame = week_df,
         y = week_df.mean(),
         labels = {
-            "y" : "Weekly Average",
+            "y" : "Weekly Points Average",
             "index" : "Weeks 1 - 10"
         },
-        title = "Bourbon Chaser Points -- Weekly Average"
+        title = "<b> Bourbon Chaser Points -- Weekly Average </b>"
     )
     col2.plotly_chart(fig)
 
