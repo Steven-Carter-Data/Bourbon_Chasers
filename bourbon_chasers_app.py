@@ -156,7 +156,7 @@ elif select == "Weekly & Overall Leaderboard":
 
     st.subheader('More Stats:')
     st.write('#### Weekly Points Average')
-    week_df.mean()
+    st.write(week_df.mean())
 
     # Compare each athlete
     # Create a list of possible values and multiselect menu with them in it
