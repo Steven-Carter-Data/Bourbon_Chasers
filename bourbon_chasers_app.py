@@ -163,17 +163,6 @@ elif select == "Weekly & Overall Leaderboard":
     mask_athletes = week_df['Athletes'].isin(athletes_selected)
     week_df1 = week_df[mask_athletes]
     week_df1
-
-
-    # if all:
-    #     selected_options = container.multiselect("Select the Bourbon Chaser:",
-    #     ["Jeremiah", "Senay", "Phil", "Todd",
-    #     "Steven", "Josh", "Andrew", "Brando", "Manley", "Matt"])
-    # else:
-    #     selected_options = container.multiselect("Select one or more Bourbon Chasers:",
-    #     ["Jeremiah", "Senay", "Phil", "Todd",
-    #     "Steven", "Josh", "Andrew", "Brando", "Manley", "Matt"])
-
         
 elif select == "Pictures":
     st.image(image= 'pictures_logo.png', use_column_width=False)
