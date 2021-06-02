@@ -157,7 +157,7 @@ elif select == "Weekly & Overall Leaderboard":
     st.subheader('Athlete Weekly Comparison')
     st.write('#### Are you leaning towards Whisky Tumbler or Belly-Button Piercing?')
     athletes = week_df['Athletes'].unique()
-    athletes_selected = st.multiselect('Select the Bourbon Chaser to compare:', athletes)
+    athletes_selected = st.multiselect('Select the Bourbon Chasers to compare:', athletes)
 
     # Mask to filter dataframe
 
