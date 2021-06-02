@@ -139,9 +139,9 @@ elif select == "Weekly & Overall Leaderboard":
     col1, col2 = st.beta_columns(2)
 
     # Overall Leaderboard
-    col2.subheader('Overall Points')
+    col1.subheader('Overall Points')
     overall_df = pd.read_excel('Master_comp1.xlsx')
-    overall_df
+    col1.write(overall_df)
     fig = px.bar(
         data_frame = overall_df,
         x = "Athletes",
