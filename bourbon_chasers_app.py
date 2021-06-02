@@ -159,9 +159,12 @@ elif select == "Weekly & Overall Leaderboard":
     col1.write('#### Weekly Points Average Among the Bourbon Chasers')
     col1.write(week_df.mean())
 
-    fig = px.scatter(
+    fig = px.line(
         data_frame = week_df,
-        y = week_df.mean()
+        y = week_df.mean(),
+        labels = {
+            "y" : "Weekly Average"
+        }
     )
     col2.plotly_chart(fig)
 
