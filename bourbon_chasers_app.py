@@ -162,7 +162,7 @@ elif select == "Weekly & Overall Leaderboard":
     col1.write(week_df.mean())
 
     week_df_indexmod = week_df.set_index([pd.Index([1,2,3,4,5,6,7,8,9,10])])
-    fig = px.scatter(
+    fig = px.scatter_3d(
         data_frame = week_df_indexmod,
         y = week_df_indexmod.mean(),
         labels = {
