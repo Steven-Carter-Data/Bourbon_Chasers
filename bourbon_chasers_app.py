@@ -125,11 +125,11 @@ elif select == "Weekly & Overall Leaderboard":
     fig = px.bar(
         data_frame = week_df,
         x = "Athletes",
-        y = "Week 4 -- May 23 - 29"
+        y = "Week 5 -- May 30 - June 5"
     )
     fig.update_layout(
     title={
-        'text': "<b> Week 4 Leaderboard </b>",
+        'text': "<b> Week 5 Leaderboard </b>",
         'y':0.9,
         'x':0.5,
         'xanchor': 'center',
@@ -181,7 +181,6 @@ elif select == "Weekly & Overall Leaderboard":
     athletes_selected = st.multiselect('Select the Bourbon Chasers to compare:', athletes)
 
     # Mask to filter dataframe
-
     mask_athletes = week_df['Athletes'].isin(athletes_selected)
     week_df1 = week_df[mask_athletes]
     week_df1
